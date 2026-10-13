@@ -3,61 +3,93 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Punto y Ganchillo — Talleres</title>
+  <title>Punto y Ganchillo | Talleres</title>
+  <meta name="description" content="Consulta los talleres de punto y ganchillo, fechas, precios y métodos de reserva." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <meta name="description" content="Talleres de punto y ganchillo: horarios, precios y reservas." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Punto y Ganchillo</a>
-      <nav class="main-nav">
+      <a class="brand" href="index.html" aria-label="Punto y Ganchillo inicio">
+        <span class="brand-mark">PyG</span>
+        <span>Punto y Ganchillo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
         <a href="index.html">Inicio</a>
         <a href="bienvenida.html">Bienvenida</a>
-        <a href="talleres.html">Talleres</a>
+        <a href="talleres.html" class="active">Talleres</a>
         <a href="producto.html">Producto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="page">
-      <h1>Talleres</h1>
-      <p>Ofrecemos talleres presenciales y online para todos los niveles.</p>
+  <main class="page-shell">
+    <section class="container page-intro">
+      <p class="eyebrow">Talleres</p>
+      <h1>Aprende a crear con tus manos.</h1>
+      <p class="lead">Talleres de punto y ganchillo para principiantes, intermedios y personas que quieren perfeccionar técnicas.</p>
+    </section>
 
-      <div class="workshop-list">
-        <article class="workshop">
-          <h3>Iniciación al ganchillo</h3>
-          <p>2 horas — Material incluido — Precio: 25€</p>
-          <p>Aprende puntos básicos y un proyecto simple.</p>
-        </article>
+    <section class="container workshop-list">
+      <article class="workshop-card">
+        <div class="workshop-meta">2 horas</div>
+        <h2>Iniciación al ganchillo</h2>
+        <p>Aprende puntos básicos, montar una pieza y hacer tu primer proyecto con calma.</p>
+        <div class="price-row"><strong>25€</strong><span>Material incluido</span></div>
+      </article>
 
-        <article class="workshop">
-          <h3>Puntos intermedios: amigurumis</h3>
-          <p>3 horas — Trae tus ganchillos — Precio: 35€</p>
-          <p>Construcción y técnicas para amigurumis.</p>
-        </article>
+      <article class="workshop-card accent">
+        <div class="workshop-meta">3 horas</div>
+        <h2>Amigurumis y figuras</h2>
+        <p>Descubre cómo dar forma a pequeños personajes con patrones sencillos y mucha creatividad.</p>
+        <div class="price-row"><strong>35€</strong><span>Trae tus agujas</span></div>
+      </article>
 
-        <article class="workshop">
-          <h3>Taller avanzado: prendas</h3>
-          <p>4 sesiones — Precio: 80€</p>
-          <p>Patrones, tallaje y acabados.</p>
-        </article>
+      <article class="workshop-card">
+        <div class="workshop-meta">4 sesiones</div>
+        <h2>Taller avanzado de prendas</h2>
+        <p>Perfecta técnicas de tejido, medidas y acabados para crear piezas más complejas.</p>
+        <div class="price-row"><strong>80€</strong><span>Incluye material</span></div>
+      </article>
+    </section>
+
+    <section class="container contact-banner">
+      <div>
+        <p class="eyebrow">Reserva tu plaza</p>
+        <h2>Escríbeme con el taller que te interesa y te responderé con disponibilidad.</h2>
       </div>
-
-      <h2>Reservas</h2>
-      <p>Para reservar, escribe a <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a> indicando taller y fecha.</p>
+      <a class="btn btn-primary" href="mailto:contacto@puntoyganchillo?subject=Reserva%20de%20taller">Reservar</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year3"></span> Punto y Ganchillo</p>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">PyG</span>
+          <span>Punto y Ganchillo</span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year"></span> Punto y Ganchillo</div>
   </footer>
 
   <script>
-    document.getElementById('year3').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

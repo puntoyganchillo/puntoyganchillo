@@ -3,61 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Punto y Ganchillo — Producto</title>
+  <title>Punto y Ganchillo | Producto</title>
+  <meta name="description" content="Explora los productos artesanales de Punto y Ganchillo: amigurumis, accesorios, kits y piezas personalizadas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <meta name="description" content="Productos artesanales: amigurumis, accesorios y kits de Punto y Ganchillo." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Punto y Ganchillo</a>
-      <nav class="main-nav">
+      <a class="brand" href="index.html" aria-label="Punto y Ganchillo inicio">
+        <span class="brand-mark">PyG</span>
+        <span>Punto y Ganchillo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
         <a href="index.html">Inicio</a>
         <a href="bienvenida.html">Bienvenida</a>
         <a href="talleres.html">Talleres</a>
-        <a href="producto.html">Producto</a>
+        <a href="producto.html" class="active">Producto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="page">
-      <h1>Productos</h1>
-      <p>Aquí tienes algunos de nuestros productos. Añade fotos y precios reales cuando los tengas.</p>
+  <main class="page-shell">
+    <section class="container page-intro">
+      <p class="eyebrow">Productos</p>
+      <h1>Piezas artesanales para regalar, decorar y disfrutar.</h1>
+      <p class="lead">Cada creación está pensada para aportar textura, ternura y originalidad.</p>
+    </section>
 
-      <div class="products-grid">
-        <article class="product">
-          <img src="https://via.placeholder.com/300x200?text=Amigurumi" alt="Amigurumi" />
-          <h3>Amigurumi Oso</h3>
-          <p>Precio: 20€</p>
-        </article>
+    <section class="container product-grid product-page-grid">
+      <article class="product-card product-card-large">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Amigurumi hecho a mano" />
+        <div class="product-body">
+          <h3>Amigurumi</h3>
+          <p>Personajes suaves y personalizados con detalles únicos.</p>
+          <span class="price">20€</span>
+        </div>
+      </article>
 
-        <article class="product">
-          <img src="https://via.placeholder.com/300x200?text=Bufanda" alt="Bufanda" />
-          <h3>Bufanda tejida</h3>
-          <p>Precio: 30€</p>
-        </article>
+      <article class="product-card product-card-large">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Bufanda tejida" />
+        <div class="product-body">
+          <h3>Bufandas y accesorios</h3>
+          <p>Accesorios cálidos para cada temporada y estilo.</p>
+          <span class="price">30€</span>
+        </div>
+      </article>
 
-        <article class="product">
-          <img src="https://via.placeholder.com/300x200?text=Kit" alt="Kit" />
+      <article class="product-card product-card-large">
+        <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Kit de ganchillo" />
+        <div class="product-body">
           <h3>Kit para principiantes</h3>
-          <p>Precio: 18€</p>
-        </article>
-      </div>
+          <p>Todo lo necesario para empezar a crear tus primeras piezas.</p>
+          <span class="price">18€</span>
+        </div>
+      </article>
+    </section>
 
-      <h2>Encargos</h2>
-      <p>¿Quieres algo personalizado? Contacta en <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>.</p>
+    <section class="container contact-banner">
+      <div>
+        <p class="eyebrow">Pedidos personalizados</p>
+        <h2>También realizamos encargos para regalos, detalles especiales y proyectos a medida.</h2>
+      </div>
+      <a class="btn btn-primary" href="mailto:contacto@puntoyganchillo?subject=Pedido%20personalizado">Solicitar pedido</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year4"></span> Punto y Ganchillo</p>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">PyG</span>
+          <span>Punto y Ganchillo</span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year"></span> Punto y Ganchillo</div>
   </footer>
 
   <script>
-    document.getElementById('year4').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

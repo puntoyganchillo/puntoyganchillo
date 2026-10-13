@@ -3,16 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Punto y Ganchillo — Inicio</title>
+  <title>Punto y Ganchillo | Inicio</title>
+  <meta name="description" content="Punto y Ganchillo: talleres de ganchillo, productos artesanales y creatividad hecha a mano." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <meta name="description" content="Punto y Ganchillo — talleres y productos de ganchillo y punto artesanales." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Punto y Ganchillo</a>
-      <nav class="main-nav">
-        <a href="index.html">Inicio</a>
+      <a class="brand" href="index.html" aria-label="Punto y Ganchillo inicio">
+        <span class="brand-mark">PyG</span>
+        <span>Punto y Ganchillo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
         <a href="bienvenida.html">Bienvenida</a>
         <a href="talleres.html">Talleres</a>
         <a href="producto.html">Producto</a>
@@ -22,33 +29,108 @@
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>Bienvenido a Punto y Ganchillo</h1>
-        <p>Creaciones artesanales, talleres presenciales y en línea, y productos únicos hechos con cariño.</p>
-        <p><a class="btn" href="talleres.html">Ver talleres</a> <a class="btn outline" href="producto.html">Ver productos</a></p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Hecho a mano con amor</p>
+          <h1>Creatividad, calma y piezas únicas para tu hogar.</h1>
+          <p class="lead">Descubre talleres, productos artesanales y proyectos especiales creados con paciencia, calidad y estilo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="talleres.html">Ver talleres</a>
+            <a class="btn btn-secondary" href="producto.html">Ver productos</a>
+          </div>
+          <ul class="hero-points">
+            <li>Productos artesanales</li>
+            <li>Talleres personalizados</li>
+            <li>Hecho a mano</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="Productos y materiales de punto y ganchillo">
+          <div class="card card-large">
+            <span class="tag">Top venta</span>
+            <h3>Amigurumi de lana</h3>
+            <p>Diseños tiernos y personalizados</p>
+          </div>
+          <div class="card card-small card-pink">Lana x 100%</div>
+          <div class="card card-small card-cream">Bolsas y accesorios</div>
+        </div>
       </div>
     </section>
 
     <section class="features container">
-      <article>
+      <article class="feature-card">
+        <div class="icon">✦</div>
         <h2>Talleres</h2>
-        <p>Aprende técnicas básicas y avanzadas en nuestros talleres. Presenciales y online.</p>
+        <p>Aprende paso a paso con cursos prácticos y acompañamiento cercano.</p>
       </article>
-      <article>
+
+      <article class="feature-card">
+        <div class="icon">❀</div>
         <h2>Productos</h2>
-        <p>Piezas únicas: amigurumis, complementos, accesorios y kits para principiantes.</p>
+        <p>Pequeñas piezas con encanto para regalar, decorar y disfrutar.</p>
       </article>
-      <article>
+
+      <article class="feature-card">
+        <div class="icon">♥</div>
         <h2>Hecho a mano</h2>
-        <p>Materiales de calidad y acabados cuidados. Pedidos por encargo disponibles.</p>
+        <p>Materiales cuidadosos, detalles únicos y trabajo artesanal.</p>
       </article>
+    </section>
+
+    <section class="showcase container">
+      <div class="section-head">
+        <p class="eyebrow">Lo más popular</p>
+        <h2>Ideas para regalar y para ti</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Muñeco tejido a mano" />
+          <div class="product-body">
+            <h3>Amigurumi</h3>
+            <p>Personajes suaves y tiernos.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Bufanda de lana" />
+          <div class="product-body">
+            <h3>Bufandas y accesorios</h3>
+            <p>Texturas cálidas y elegantes.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80" alt="Kit de ganchillo" />
+          <div class="product-body">
+            <h3>Kits para principiantes</h3>
+            <p>Todo lo necesario para empezar.</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Punto y Ganchillo — Contacto: <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a></p>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">PyG</span>
+          <span>Punto y Ganchillo</span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year"></span> Punto y Ganchillo</div>
   </footer>
 
   <script>
@@ -56,3 +138,149 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

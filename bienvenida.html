@@ -3,42 +3,88 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Punto y Ganchillo — Bienvenida</title>
+  <title>Punto y Ganchillo | Bienvenida</title>
+  <meta name="description" content="Conoce Punto y Ganchillo, nuestra historia, valores y pasión por el tejido artesanal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
-  <meta name="description" content="Bienvenida a Punto y Ganchillo. Conócenos y descubre nuestros valores y metodología." />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Punto y Ganchillo</a>
-      <nav class="main-nav">
+      <a class="brand" href="index.html" aria-label="Punto y Ganchillo inicio">
+        <span class="brand-mark">PyG</span>
+        <span>Punto y Ganchillo</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Principal">
         <a href="index.html">Inicio</a>
-        <a href="bienvenida.html">Bienvenida</a>
+        <a href="bienvenida.html" class="active">Bienvenida</a>
         <a href="talleres.html">Talleres</a>
         <a href="producto.html">Producto</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="page">
-      <h1>Bienvenida</h1>
-      <p>¡Hola! Soy [Tu nombre], creadora de Punto y Ganchillo. Aquí encontrarás una comunidad para aprender, compartir y comprar piezas artesanales.</p>
-      <h2>Nuestra filosofía</h2>
-      <p>Trabajo con materiales responsables, apoyo a productores locales y enseño técnicas paso a paso para que cualquier persona pueda empezar.</p>
-      <h2>Contacto</h2>
-      <p>¿Preguntas o encargos? Escribe a <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a> o usa nuestras redes (añade enlaces cuando los tengas).</p>
+  <main class="page-shell">
+    <section class="container page-intro">
+      <p class="eyebrow">Bienvenida</p>
+      <h1>Tejiendo creatividad y momentos especiales.</h1>
+      <p class="lead">Punto y Ganchillo nace del deseo de crear piezas tiernas, útiles y emocionantes, con un toque artesanal que las hace únicas.</p>
+    </section>
+
+    <section class="container story-layout">
+      <div class="story-copy">
+        <h2>Mi historia</h2>
+        <p>Todo comenzó con la idea de transformar lanas, hilos y paciencia en pequeñas obras que acompañan la vida cotidiana. Cada pieza se crea con cariño, pensando en quién la recibe y en la sensación que transmite.</p>
+        <p>En Punto y Ganchillo me apasiona compartir esa belleza del trabajo manual: la tranquilidad, la creatividad y la conexión entre personas a través de los materiales.</p>
+      </div>
+
+      <div class="story-card">
+        <h3>Valores</h3>
+        <ul>
+          <li>Artesanía auténtica</li>
+          <li>Materiales de calidad</li>
+          <li>Atención cercana y personalizada</li>
+          <li>Diseños únicos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container contact-banner">
+      <div>
+        <p class="eyebrow">¿Quieres contactar?</p>
+        <h2>Estoy aquí para ayudarte con encargos, talleres o consultas.</h2>
+      </div>
+      <a class="btn btn-primary" href="mailto:contacto@puntoyganchillo">Escríbeme</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year2"></span> Punto y Ganchillo</p>
+    <div class="container footer-inner">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark">PyG</span>
+          <span>Punto y Ganchillo</span>
+        </a>
+      </div>
+
+      <div class="footer-links">
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>
+      </div>
     </div>
+    <div class="container copyright">© <span id="year"></span> Punto y Ganchillo</div>
   </footer>
 
   <script>
-    document.getElementById('year2').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
