@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Punto y Ganchillo — Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Punto y Ganchillo — talleres y productos de ganchillo y punto artesanales." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Punto y Ganchillo</a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Bienvenido a Punto y Ganchillo</h1>
+        <p>Creaciones artesanales, talleres presenciales y en línea, y productos únicos hechos con cariño.</p>
+        <p><a class="btn" href="talleres.html">Ver talleres</a> <a class="btn outline" href="producto.html">Ver productos</a></p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article>
+        <h2>Talleres</h2>
+        <p>Aprende técnicas básicas y avanzadas en nuestros talleres. Presenciales y online.</p>
+      </article>
+      <article>
+        <h2>Productos</h2>
+        <p>Piezas únicas: amigurumis, complementos, accesorios y kits para principiantes.</p>
+      </article>
+      <article>
+        <h2>Hecho a mano</h2>
+        <p>Materiales de calidad y acabados cuidados. Pedidos por encargo disponibles.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Punto y Ganchillo — Contacto: <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

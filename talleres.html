@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Punto y Ganchillo — Talleres</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Talleres de punto y ganchillo: horarios, precios y reservas." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Punto y Ganchillo</a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Talleres</h1>
+      <p>Ofrecemos talleres presenciales y online para todos los niveles.</p>
+
+      <div class="workshop-list">
+        <article class="workshop">
+          <h3>Iniciación al ganchillo</h3>
+          <p>2 horas — Material incluido — Precio: 25€</p>
+          <p>Aprende puntos básicos y un proyecto simple.</p>
+        </article>
+
+        <article class="workshop">
+          <h3>Puntos intermedios: amigurumis</h3>
+          <p>3 horas — Trae tus ganchillos — Precio: 35€</p>
+          <p>Construcción y técnicas para amigurumis.</p>
+        </article>
+
+        <article class="workshop">
+          <h3>Taller avanzado: prendas</h3>
+          <p>4 sesiones — Precio: 80€</p>
+          <p>Patrones, tallaje y acabados.</p>
+        </article>
+      </div>
+
+      <h2>Reservas</h2>
+      <p>Para reservar, escribe a <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a> indicando taller y fecha.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Punto y Ganchillo</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

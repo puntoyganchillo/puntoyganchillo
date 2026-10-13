@@ -1,16 +1,23 @@
-## Hi there 👋
+# Punto y Ganchillo
 
-<!--
-**puntoyganchillo/puntoyganchillo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Sitio web estático con las páginas:
+- Inicio
+- Bienvenida
+- Talleres
+- Producto
 
-Here are some ideas to get you started:
+## Archivos principales
+- `index.html`
+- `bienvenida.html`
+- `talleres.html`
+- `producto.html`
+- `css/styles.css`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Publicación con GitHub Pages
+1. Entra en `Settings` > `Pages` del repositorio.
+2. En `Source`, selecciona `Deploy from a branch`.
+3. Elige la rama `main` y la carpeta `/root`.
+4. Guarda.
+
+La web quedará disponible en:
+`https://puntoyganchillo.github.io/puntoyganchillo/`

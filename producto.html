@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Punto y Ganchillo — Producto</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Productos artesanales: amigurumis, accesorios y kits de Punto y Ganchillo." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Punto y Ganchillo</a>
+      <nav class="main-nav">
+        <a href="index.html">Inicio</a>
+        <a href="bienvenida.html">Bienvenida</a>
+        <a href="talleres.html">Talleres</a>
+        <a href="producto.html">Producto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page">
+      <h1>Productos</h1>
+      <p>Aquí tienes algunos de nuestros productos. Añade fotos y precios reales cuando los tengas.</p>
+
+      <div class="products-grid">
+        <article class="product">
+          <img src="https://via.placeholder.com/300x200?text=Amigurumi" alt="Amigurumi" />
+          <h3>Amigurumi Oso</h3>
+          <p>Precio: 20€</p>
+        </article>
+
+        <article class="product">
+          <img src="https://via.placeholder.com/300x200?text=Bufanda" alt="Bufanda" />
+          <h3>Bufanda tejida</h3>
+          <p>Precio: 30€</p>
+        </article>
+
+        <article class="product">
+          <img src="https://via.placeholder.com/300x200?text=Kit" alt="Kit" />
+          <h3>Kit para principiantes</h3>
+          <p>Precio: 18€</p>
+        </article>
+      </div>
+
+      <h2>Encargos</h2>
+      <p>¿Quieres algo personalizado? Contacta en <a href="mailto:contacto@puntoyganchillo">contacto@puntoyganchillo</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Punto y Ganchillo</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
