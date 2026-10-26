@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Punto y Ganchillo | Bienvenida</title>
-  <meta name="description" content="Conoce Punto y Ganchillo, nuestra historia, valores y pasión por el tejido artesanal." />
+  <title>Punto y Ganchillo | Inicio</title>
+  <meta name="description" content="Punto y Ganchillo: talleres de ganchillo, productos artesanales y creatividad hecha a mano." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,50 +14,64 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Punto y Ganchillo inicio">
-        <span class="brand-mark">PyG</span>
-        <span>Punto y Ganchillo</span>
+        <img class="brand-logo" src="assets/logo.svg" alt="Punto y Ganchillo" />
       </a>
 
       <nav class="main-nav" aria-label="Principal">
-        <a href="index.html">Inicio</a>
-        <a href="bienvenida.html" class="active">Bienvenida</a>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="bienvenida.html">Bienvenida</a>
         <a href="talleres.html">Talleres</a>
         <a href="producto.html">Producto</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-shell">
-    <section class="container page-intro">
-      <p class="eyebrow">Bienvenida</p>
-      <h1>Tejiendo creatividad y momentos especiales.</h1>
-      <p class="lead">Punto y Ganchillo nace del deseo de crear piezas tiernas, útiles y emocionantes, con un toque artesanal que las hace únicas.</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Hecho a mano con cariño</p>
+          <h1>Creatividad, calma y piezas únicas para tu hogar.</h1>
+          <p class="lead">Punto y Ganchillo combina artesanía, estilo y creatividad para ofrecer piezas delicadas, útiles y llenas de personalidad.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="talleres.html">Ver talleres</a>
+            <a class="btn btn-secondary" href="producto.html">Ver productos</a>
+          </div>
+          <div class="mini-pills">
+            <span>Artesanía</span>
+            <span>Talleres</span>
+            <span>Regalos</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-frame">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80" alt="Piezas tejidas a mano" />
+          </div>
+          <div class="floating-note top">Lana natural</div>
+          <div class="floating-note bottom">Hecho a mano</div>
+        </div>
+      </div>
     </section>
 
-    <section class="container story-layout">
-      <div class="story-copy">
-        <h2>Mi historia</h2>
-        <p>Todo comenzó con la idea de transformar lanas, hilos y paciencia en pequeñas obras que acompañan la vida cotidiana. Cada pieza se crea con cariño, pensando en quién la recibe y en la sensación que transmite.</p>
-        <p>En Punto y Ganchillo me apasiona compartir esa belleza del trabajo manual: la tranquilidad, la creatividad y la conexión entre personas a través de los materiales.</p>
-      </div>
+    <section class="features container">
+      <article class="feature-card">
+        <div class="icon">✦</div>
+        <h2>Talleres</h2>
+        <p>Clases guiadas para aprender paso a paso y crear con calma.</p>
+      </article>
 
-      <div class="story-card">
-        <h3>Valores</h3>
-        <ul>
-          <li>Artesanía auténtica</li>
-          <li>Materiales de calidad</li>
-          <li>Atención cercana y personalizada</li>
-          <li>Diseños únicos</li>
-        </ul>
-      </div>
-    </section>
+      <article class="feature-card">
+        <div class="icon">❀</div>
+        <h2>Productos</h2>
+        <p>Pequeñas piezas artesanales con estilo y un toque personal.</p>
+      </article>
 
-    <section class="container contact-banner">
-      <div>
-        <p class="eyebrow">¿Quieres contactar?</p>
-        <h2>Estoy aquí para ayudarte con encargos, talleres o consultas.</h2>
-      </div>
-      <a class="btn btn-primary" href="mailto:contacto@puntoyganchillo">Escríbeme</a>
+      <article class="feature-card">
+        <div class="icon">♥</div>
+        <h2>Hecho a mano</h2>
+        <p>Materiales cuidando cada detalle para una pieza única.</p>
+      </article>
     </section>
   </main>
 
@@ -65,8 +79,7 @@
     <div class="container footer-inner">
       <div>
         <a class="brand footer-brand" href="index.html">
-          <span class="brand-mark">PyG</span>
-          <span>Punto y Ganchillo</span>
+          <img class="brand-logo" src="assets/logo.svg" alt="Punto y Ganchillo" />
         </a>
       </div>
 
