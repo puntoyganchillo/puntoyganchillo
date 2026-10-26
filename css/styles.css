@@ -69,6 +69,13 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 12px 20px rgba(183, 101, 138, 0.2);
 }
 
+.brand-logo {
+  width: clamp(150px, 18vw, 220px);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 14px rgba(183, 101, 138, 0.14));
+}
+
 .main-nav {
   display: flex;
   align-items: center;
